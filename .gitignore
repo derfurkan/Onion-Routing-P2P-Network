@@ -22,3 +22,10 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/Onion-Routing-P2P-Client/.gradle
+/Onion-Routing-P2P-Client/.idea
+/Onion-Routing-P2P-Client/build
+/Onion-Routing-P2P-Client/gradle
+Onion-Routing-P2P-Client/gradlew.bat
+Onion-Routing-P2P-Client/gradlew
+Onion-Routing-P2P-Client/.profileconfig.json
