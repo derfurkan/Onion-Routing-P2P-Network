@@ -8,6 +8,4 @@ public class RoutingPacket {
   private String encryptedMessage;
   private String hopIp;
   private int hopPort;
-
-  public RoutingPacket(String decryptedJson) {}
 }

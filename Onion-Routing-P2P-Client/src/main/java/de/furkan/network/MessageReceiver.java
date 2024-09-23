@@ -2,6 +2,5 @@ package de.furkan.network;
 
 public interface MessageReceiver {
 
-    void onMessage(String rawMessage);
-
+  void onMessage(String rawMessage);
 }
