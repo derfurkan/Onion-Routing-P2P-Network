@@ -1,5 +1,7 @@
 # Onion Routing based P2P Network
 
+### (Unfinished and work in progress) 
+
 ## How It Works
 - When **Client A** wants to send a message to **Client B**, they do not send it directly. Instead, the message is encrypted X times and passed through other client(s) (hops). Each hop decrypts one layer to learn the next hop's IP, and the process continues until the message reaches **Client B**.
 - The system prevents **Client A** from knowing **Client B's** IP address by using multiple intermediate nodes, with each node only knowing the IP of the next hop.
