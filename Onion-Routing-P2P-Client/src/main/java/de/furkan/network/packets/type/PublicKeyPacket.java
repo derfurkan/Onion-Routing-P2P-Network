@@ -1,6 +1,16 @@
 package de.furkan.network.packets.type;
 
-public class PublicKeyPacket {
+import de.furkan.network.packets.Packet;
+import de.furkan.network.packets.PacketType;
+import lombok.Getter;
 
-  private String publicKey;
+@Getter
+public class PublicKeyPacket extends Packet {
+
+    private final String publicKey;
+
+    public PublicKeyPacket(String publicKey) {
+        super(PacketType.PUBLIC_KEY);
+        this.publicKey = publicKey;
+    }
 }
