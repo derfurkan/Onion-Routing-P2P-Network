@@ -17,6 +17,7 @@ public class CryptoUtil {
     private final String keyAlgorithm = "AES";
     private PublicKey publicKey;
     private PrivateKey privateKey;
+    private String publicKeyString;
 
     public void generateCryptoKeys() {
         try {
@@ -25,9 +26,7 @@ public class CryptoUtil {
             KeyPair keyPair = keyPairGenerator.generateKeyPair();
             publicKey = keyPair.getPublic();
             privateKey = keyPair.getPrivate();
-
-            System.out.println("Private Key: " + Base64.getEncoder().encodeToString(privateKey.getEncoded()));
-            System.out.println("Public Key: " + Base64.getEncoder().encodeToString(publicKey.getEncoded()));
+            publicKeyString = Base64.getEncoder().encodeToString(publicKey.getEncoded());
         } catch (Exception e) {
             e.printStackTrace();
         }

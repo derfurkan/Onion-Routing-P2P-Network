@@ -3,12 +3,12 @@ package de.furkan.network.packets;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import de.furkan.P2PClient;
+import de.furkan.P2PServer;
 import de.furkan.network.packets.type.HopPacket;
 import de.furkan.network.packets.type.MessagePacket;
 import de.furkan.network.packets.type.PublicKeyPacket;
 
-public record PacketHandler(P2PClient p2PClient, Gson gson) {
+public record PacketHandler(P2PServer p2PServer, Gson gson) {
 
     public Object buildPacket(String decryptedJson) {
         if (decryptedJson == null) return null;
